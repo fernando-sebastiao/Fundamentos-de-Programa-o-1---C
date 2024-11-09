@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
+int main() {
     int ano_nascimento, ano_atual, idade, ano2030, idade_dias, idade_mes;
 
     printf("Digite o ano de nascimento: \n");
@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     idade_dias = idade * 365;
     
 
-    idade_mes = (ano_atual - ano_nascimento) * 12;
+    idade_mes = idade * 12;
 
     printf("A sua idade atual: %d anos\n", idade);
     printf("A sua idade em 2030: %d anos\n", ano2030);

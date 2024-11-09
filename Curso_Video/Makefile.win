@@ -1,15 +1,15 @@
-# Project: trocaValores
+# Project: Conceitos
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = trocavalores.o teste.o
-LINKOBJ  = trocavalores.o teste.o
+OBJ      = somando.o diamesano.o
+LINKOBJ  = somando.o diamesano.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = trocaValores.exe
+BIN      = Conceitos.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,8 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-trocavalores.o: trocavalores.c
-	$(CC) -c trocavalores.c -o trocavalores.o $(CFLAGS)
+somando.o: somando.c
+	$(CC) -c somando.c -o somando.o $(CFLAGS)
 
-teste.o: teste.c
-	$(CC) -c teste.c -o teste.o $(CFLAGS)
+diamesano.o: diamesano.c
+	$(CC) -c diamesano.c -o diamesano.o $(CFLAGS)
