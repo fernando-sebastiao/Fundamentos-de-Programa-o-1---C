@@ -24,9 +24,8 @@ int main(){
 		for(i = 0; i < TAM - 1; i++){
 			if(numero[i] > numero[i+1]){
 				aux = numero[i];
-				numero[i] = numero[i+1];
 				numero[i+1] = aux;
-			}
+			} 
 		}
 	}
 	
