@@ -10,12 +10,12 @@ int main() {
 	  total = 0;
 	  cod = 'C';
 	  while(cod!= 'F'){
-	  	for(cont = 1; cont <= 4; cont++){
+	  	for(cont = 1; cont <= 3; cont++){
 	  		printf("Digite a %d nota: ", cont);
 	  		scanf("%f", &nota);
 	  		total += nota;
 		  }
-	  media = total / 4;
+	  media = total / 3;
 	  printf("\nA media final eh: %.2f \n\n", media);
 	  total = 0;
 	  nota = 0;
