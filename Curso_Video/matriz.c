@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
+//valores constantes
 #define NUM_L 5
 #define NUM_C 4
 
@@ -27,6 +28,7 @@ int main(){
 		}
 		printf("\n");
 	}
+	
 	printf("O valor do elemento da 2ª linha, 3ª coluna é: %4.2f\n\n", notas[1][2]);
 	
 	total = soma/contador;
