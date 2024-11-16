@@ -10,7 +10,7 @@ int main(){
 	while(i<=4) {
 		
 		printf("Digite o sexo: ");
-		scanf("%s", &sexo);
+		scanf("%c", &sexo);
 		
 		printf("Digite o nome: ") ;
 		scanf("%s", &nome);
@@ -18,7 +18,7 @@ int main(){
 		printf("Digite a idade: ");
 		scanf("%d", &idade);
 		
-		if(sexo == 'M' && idade>=18)
+		if(sexo == "M" && idade>=18)
 		{
 			printf("O nome eh %s, e o sexo eh %c, e a idade eh %d \n", nome, sexo, idade);
 		}

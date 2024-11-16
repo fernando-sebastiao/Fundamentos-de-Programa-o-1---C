@@ -10,15 +10,14 @@ int main(){
 		
 		printf("Digite o número: \n");
 		scanf("%d", &numero);
-		if(numero < 0){
-			return 1;
-		}
-		
-		contador++;
-		
+
+			contador++;
+	
 		
 	} while(numero > 0);
-	printf("\n A quantidade de números digitados é: %d\n\n", contador);
+	
+	printf("\n A quantidade de números digitados é: %i \n\n", contador);
+	
 	system("PAUSE");
 	return 0;
 }
